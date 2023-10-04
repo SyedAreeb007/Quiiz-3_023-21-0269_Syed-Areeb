@@ -22,3 +22,6 @@
     transform: translate(65%, -1210%);
     border-radius: 25px 25px;
 }
+h1 {
+    text-align: center;
+}
