@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +9,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
     <title>Move Buttons on Image</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-lg-6 col-md-12">
                 <div class="image-container">
-                    
+
                     <img class="bg-img" src="\Assets\img\4282077 1.png" alt="login pic">
-                    <button class="overlay-button-1"><img src="/Assets/img/circle-linkedin-512.webp" alt="linkedin logo" height="20" width="20"> Sign up with LinkedIn</button><br>
-                    <button class="overlay-button-2"><img src="\Assets\img\twitter-icon-circle-blue-logo-0902F48837-seeklogo.com.png" alt="twitter logo" height="20" width="20"> Sign up with Twitter</button><br>
-                    <button class="overlay-button-3"><img src="\Assets\img\Facebook-Logosu.png" alt="twitter logo" height="20" width="37">Sign up with Facebook</button><br>
-    
+                    <button class="overlay-button-1"><img src="/Assets/img/circle-linkedin-512.webp" alt="linkedin logo"
+                            height="20" width="20"> Sign up with LinkedIn</button><br>
+                    <button class="overlay-button-2"><img
+                            src="\Assets\img\twitter-icon-circle-blue-logo-0902F48837-seeklogo.com.png"
+                            alt="twitter logo" height="20" width="20"> Sign up with Twitter</button><br>
+                    <button class="overlay-button-3"><img src="\Assets\img\Facebook-Logosu.png" alt="twitter logo"
+                            height="20" width="37">Sign up with Facebook</button><br>
+
                 </div>
             </div>
 
 
 
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div style = "position:relative; left:-200px; top:750px;">
+                <div style="position:relative; left:500px;  top:0px;">
                     <img src="\Assets\img\Screenshot 2023-10-04 150455.png" alt="">
                 </div>
                 <div class="right-side">
@@ -43,16 +48,17 @@
                         </div>
 
                         <p class="terms-message">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input">
-                                Creating an account means you're okay with our <b>Terms of Service</b>,
-                                <b>Policy</b>, and <b>Notification Settings</b>
-                            </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input">
+                            Creating an account means you're okay with our <b>Terms of Service</b>,
+                            <b>Policy</b>, and <b>Notification Settings</b>
+                        </div>
                         </p>
-                        <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                        <button type="submit" class="btn btn-success btn-block" id="submit" onClick="getValue()">Sign
+                            Up</button>
                     </form>
                 </div>
-                <div style = "position:relative; left:800px;  top:-500px;">
+                <div style="position:relative; right:10px; top:250px;">
                     <img src="\Assets\img\Screenshot 2023-10-04 150455.png" alt="">
                 </div>
             </div>
@@ -60,7 +66,21 @@
 
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function getValue() {
+            let eml = document.getElementById("email").value;
+            let pwd = document.getElementById("password").value;
+            console.log("Email: " + eml);
+            console.log("Password: " + pwd);
+        }
+    </script>
 </body>
+
 </html>
